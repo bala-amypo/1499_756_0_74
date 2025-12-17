@@ -8,5 +8,15 @@ import jakarta.persistence.Id;
 public class LocationEntity{
   @Id
   @GeneratedValue(strategy=GenerationType.IDENTITY)
-  private 
+  private Long Id;
+  private String name;
+  private Double latitude;
+  private Double longitude;
+  public Long getId(){
+    return Id;
+  }
+  public void setId(Long Id){
+    this.Id = Id;
+  }
+  
 }
