@@ -1,3 +1,6 @@
 package com.example.demo.service;
 
-public class LocationServiceImpl implements LocationService
+public class LocationServiceImpl implements LocationService{
+    @autowired
+    LocationRepository locationrepo
+}
