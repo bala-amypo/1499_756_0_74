@@ -6,5 +6,8 @@ public class LocationController{
     public LocationEntity add(@RequestBody LocationEntity le){
         return locationservice.createlocation(le);
     }
-    @
+    @GetMapping("/showlocation")
+    public List<LocationEntity>show(){
+        return locationservice.getalllocation();
+    }
 }
